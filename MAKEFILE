@@ -1,0 +1,13 @@
+.PHONY: new test fmt
+new:
+	python3 tools/generate_problem.py $(TOPIC) $(DIFF) $(NAME)
+
+test:
+	./tools/run_tests.sh $(LANG) $(TOPIC) $(DIFF) $(NAME)
+
+fmt:
+	# Basic format actions
+	black .
+	gofmt -w .
+	rustfmt --edition 2021 .
+
