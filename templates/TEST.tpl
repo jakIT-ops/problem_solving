@@ -1,0 +1,8 @@
+{
+  "cases": [
+    {
+      "input": {},
+      "expected": null
+    }
+  ]
+}

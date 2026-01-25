@@ -1,1 +1,8 @@
 .obsidian/
+target/
+**/target/
+__pycache__/
+**/*.exe
+**/*.out
+.vscode/
+lc/src/lib.rs
