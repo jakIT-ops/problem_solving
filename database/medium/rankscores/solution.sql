@@ -19,7 +19,6 @@
 --     4.0 -> 1-р эрэмбэ
 --     3.5 -> 2-р эрэмбэ (1-ийн дараа шууд 2 орж байна)
 
-
 select
     s.score,
     dense_rank() over (order by s.score desc) as rank
